@@ -11,7 +11,8 @@
       <div class="background-image">
         <img src="./assets/group-10.png" alt="Header background image" />
       </div>
-      <div class="overlay"></div>
+      <div class="overlay one"></div>
+      <div class="overlay two"></div>
       <nav class="nav">
         <div class="nav__menu">
           <svg
@@ -38,23 +39,29 @@
         <a href="#" class="nav__logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="175"
-            height="133"
-            viewBox="0 0 175 133"
+            width="52"
+            height="48"
+            viewBox="0 0 52 48"
           >
-            <g
-              fill="#FFF"
-              fill-rule="evenodd"
-              font-family="BlowBrush"
-              font-size="40"
-              letter-spacing="2.053"
-            >
-              <text transform="rotate(-20 150.555 22.808)">
-                <tspan x=".115" y="38.317">No Name</tspan>
-              </text>
-              <text transform="rotate(-20 150.555 22.808)">
-                <tspan x="38.648" y="73.91">Brand</tspan>
-              </text>
+            <g fill="none">
+              <g fill="#151625">
+                <path
+                  d="M46.09 40.503L30.957 29.71v-4.853c.002-3.815-1.774-7.413-4.805-9.731-3.03-2.318-6.968-3.091-10.65-2.091l-8.596 2.343 5.08-7.318C16.65 1.329 25.145-1.589 32.959.854c7.814 2.444 13.134 9.682 13.132 17.869v21.78zm-8.652-14.13l2.174 1.552v-9.191c.006-3.816-1.77-7.417-4.802-9.734-3.032-2.318-6.972-3.088-10.653-2.08 7.893 2.399 13.29 9.676 13.295 17.925l-.014 1.529z"
+                  transform="translate(5 7)"
+                />
+                <path
+                  d="M6.478 40.336H0v-15.48c.01-8.44 5.658-15.834 13.799-18.064l8.59-2.335-5.08 7.31c-1.422 2.044-2.182 4.476-2.176 6.967v15.48H8.654v-15.48c0-.278 0-.578.02-.865-1.429 2.05-2.195 4.489-2.196 6.987v15.48z"
+                  transform="translate(5 7)"
+                />
+              </g>
+              <g fill="#FFF">
+                <path
+                  d="M46.09 40.503L30.957 29.71v-4.853c.002-3.815-1.774-7.413-4.805-9.731-3.03-2.318-6.968-3.091-10.65-2.091l-8.596 2.343 5.08-7.318C16.65 1.329 25.145-1.589 32.959.854c7.814 2.444 13.134 9.682 13.132 17.869v21.78zm-8.652-14.13l2.174 1.552v-9.191c.006-3.816-1.77-7.417-4.802-9.734-3.032-2.318-6.972-3.088-10.653-2.08 7.893 2.399 13.29 9.676 13.295 17.925l-.014 1.529z"
+                />
+                <path
+                  d="M6.478 40.336H0v-15.48c.01-8.44 5.658-15.834 13.799-18.064l8.59-2.335-5.08 7.31c-1.422 2.044-2.182 4.476-2.176 6.967v15.48H8.654v-15.48c0-.278 0-.578.02-.865-1.429 2.05-2.195 4.489-2.196 6.987v15.48z"
+                />
+              </g>
             </g>
           </svg>
         </a>
@@ -175,25 +182,51 @@
         <img
           src="./assets/vector-hoodie-front-back-1.png"
           alt="Picture of hoodie"
+          class="product__image"
         />
+        <div class="product__details-overlay">
+          <p class="name">Lorem ipsum</p>
+        </div>
       </div>
       <div class="product">
         <img
           src="./assets/8-b-50-c-587840-b-11-cc-8007-ff-68244-fd-3-b-5-removebg-preview.png"
           alt="Picture of t-shirt"
+          class="product__image"
         />
+        <div class="product__details-overlay">
+          <p class="name">Lorem ipsum</p>
+        </div>
       </div>
       <div class="product">
-        <img src="./assets/6677612-preview.png" alt="Picture of baseball hat" />
+        <img
+          src="./assets/6677612-preview.png"
+          alt="Picture of baseball hat"
+          class="product__image"
+        />
+        <div class="product__details-overlay">
+          <p class="name">Lorem ipsum</p>
+        </div>
       </div>
       <div class="product">
-        <img src="./assets/unnamed.png" alt="Picture of a mug" />
+        <img
+          src="./assets/unnamed.png"
+          alt="Picture of a mug"
+          class="product__image"
+        />
+        <div class="product__details-overlay">
+          <p class="name">Lorem ipsum</p>
+        </div>
       </div>
       <div class="product">
         <img
           src="./assets/205-2053448-grocery-bag-images-clipart-png-download-pp-non-removebg-preview.png"
           alt="Picture of a grocery bag"
+          class="product__image"
         />
+        <div class="product__details-overlay">
+          <p class="name">Lorem ipsum</p>
+        </div>
       </div>
     </section>
 
@@ -215,7 +248,11 @@
             alt="Article featured image"
             class="article__image"
           />
-          <h3 class="article__title">Tribe week’s on flick</h3>
+          <h3 class="article__title">
+            <a href="#">
+              Tribe week’s on flick
+            </a>
+          </h3>
           <p class="article__excerpt">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -228,7 +265,7 @@
             alt="Article featured image"
             class="article__image"
           />
-          <h3 class="article__title">Tribe week’s on flick</h3>
+          <h3 class="article__title"><a href="#">Tribe week’s on flick</a></h3>
           <p class="article__excerpt">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -241,7 +278,7 @@
             alt="Article featured image"
             class="article__image"
           />
-          <h3 class="article__title">Tribe week’s on flick</h3>
+          <h3 class="article__title"><a href="#">Tribe week’s on flick</a></h3>
           <p class="article__excerpt">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -351,5 +388,7 @@
         </svg>
       </div>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
