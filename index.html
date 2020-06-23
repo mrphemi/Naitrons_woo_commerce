@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="main.css" />
     <title>WOO COMMERCE OVERRIDE</title>
   </head>
   <body>
     <header>
-      <div class="background-image">
-        <img src="./assets/group-10.png" alt="Header background image" />
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="background-image swiper-slide"></div>
+          <div class="background-image swiper-slide"></div>
+          <div class="background-image swiper-slide"></div>
+        </div>
       </div>
-      <div class="overlay one"></div>
-      <div class="overlay two"></div>
       <nav class="nav">
         <div class="nav__menu">
           <svg
@@ -147,8 +150,9 @@
         </div>
       </nav>
     </header>
+
     <div class="buttons">
-      <button class="button-left">
+      <button class="button-left swiper-button-prev">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -167,7 +171,7 @@
       <button class="view-collection">
         <a href="#">view collection</a>
       </button>
-      <button class="button-right">
+      <button class="button-right swiper-button-next">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -401,6 +405,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>

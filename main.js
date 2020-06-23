@@ -19,3 +19,19 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("coloured");
   }
 });
+
+// Initialize slider
+const mySwiper = new Swiper(".swiper-container", {
+  direction: "horizontal",
+  loop: true,
+  spaceBetween: 30,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 90,
+    slideShadows: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

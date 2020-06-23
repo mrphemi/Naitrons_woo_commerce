@@ -24,7 +24,7 @@ button {
   border: none;
   outline: none;
   background-color: #000000;
-  color: #f7f7f7;
+  color: #f7f7f7 !important;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
@@ -42,15 +42,8 @@ h2 {
 }
 
 header {
-  height: 40vh;
+  height: 50vh;
   position: relative;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    height: 40vh;
-  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -59,44 +52,17 @@ header {
   }
 }
 
+header .swiper-container,
+header .swiper-wrapper {
+  height: 100%;
+}
+
 header .background-image {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-header .background-image img {
-  width: 150%;
-}
-
-@media screen and (min-width: 768px) {
-  header .background-image img {
-    width: 100%;
-  }
-}
-
-header .overlay {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-header .overlay.one {
-  background-color: #f7f7f7;
-  z-index: -1;
-}
-
-header .overlay.two {
-  background-color: #000;
-  opacity: 0.35;
-  z-index: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/assets/group-10.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/group-10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 header .nav {
@@ -128,6 +94,7 @@ header .nav {
 
 header .nav.coloured {
   background-color: #fff;
+  border-bottom: 2px solid #f7f7f7;
   top: 0;
   padding: 1rem 2rem;
 }
@@ -266,6 +233,8 @@ header .nav__group .cart:after {
 }
 
 .buttons button {
+  position: static !important;
+  margin-top: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,6 +246,10 @@ header .nav__group .cart:after {
           align-items: center;
   height: 6rem;
   width: 6rem;
+}
+
+.buttons button:after {
+  content: "";
 }
 
 .buttons .view-collection {
@@ -310,6 +283,7 @@ header .nav__group .cart:after {
   display: -ms-grid;
   display: grid;
   gap: 3rem;
+  grid-auto-rows: 1fr;
 }
 
 @media screen and (min-width: 768px) {

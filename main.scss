@@ -24,7 +24,7 @@ button {
   border: none;
   outline: none;
   background-color: #000000;
-  color: #f7f7f7;
+  color: #f7f7f7 !important;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
@@ -43,47 +43,24 @@ h2 {
 
 // Header
 header {
-  height: 40vh;
+  height: 50vh;
   position: relative;
-  overflow: hidden;
-  @media screen and (min-width: 768px) {
-    height: 40vh;
-  }
   @media screen and (min-width: 1280px) {
     height: 80vh;
   }
+  .swiper-container,
+  .swiper-wrapper {
+    height: 100%;
+  }
+
   .background-image {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    img {
-      width: 150%;
-      @media screen and (min-width: 768px) {
-        width: 100%;
-      }
-    }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/assets/group-10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  .overlay {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    &.one {
-      background-color: #f7f7f7;
-      z-index: -1;
-    }
-    &.two {
-      background-color: #000;
-      opacity: 0.35;
-      z-index: 1;
-    }
-  }
+
   .nav {
     padding: 0 2rem 0;
     position: fixed;
@@ -98,6 +75,7 @@ header {
     }
     &.coloured {
       background-color: #fff;
+      border-bottom: 2px solid #f7f7f7;
       top: 0;
       padding: 1rem 2rem;
       .icon {
@@ -199,11 +177,16 @@ header {
   justify-content: center;
   z-index: 10;
   button {
+    position: static !important;
+    margin-top: 0 !important;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6rem;
     width: 6rem;
+    &:after {
+      content: "";
+    }
   }
 
   .view-collection {
@@ -231,6 +214,7 @@ header {
   padding: 5rem 2rem 0;
   display: grid;
   gap: 3rem;
+  grid-auto-rows: 1fr;
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     padding: 5rem 5rem 0;
