@@ -23,13 +23,9 @@ window.addEventListener("scroll", () => {
 // Initialize slider
 const mySwiper = new Swiper(".swiper-container", {
   direction: "horizontal",
+  speed: 500,
   loop: true,
-  spaceBetween: 30,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 90,
-    slideShadows: false,
-  },
+  autoplay: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
