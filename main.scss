@@ -81,6 +81,11 @@ header {
       .icon {
         g,
         line {
+          stroke: #000;
+        }
+      }
+      #close-nav {
+        line {
           stroke: #000 !important;
         }
       }

@@ -1,7 +1,7 @@
 const nav = document.querySelector(".nav");
-const hamburgerMenu = document.querySelector(".nav__menu .open-nav");
+const hamburgerMenu = document.querySelector(".nav__menu #open-nav");
 const navGroup = document.querySelector(".nav__group");
-const closeIcon = document.querySelector(".nav__menu .close-nav");
+const closeIcon = document.querySelector(".nav__menu #close-nav");
 
 // open nav on mobile devices
 hamburgerMenu.addEventListener("click", () => {

@@ -101,6 +101,10 @@ header .nav.coloured {
 
 header .nav.coloured .icon g,
 header .nav.coloured .icon line {
+  stroke: #000;
+}
+
+header .nav.coloured #close-nav line {
   stroke: #000 !important;
 }
 
