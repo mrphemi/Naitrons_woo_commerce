@@ -79,8 +79,9 @@ header {
       top: 0;
       padding: 1rem 2rem;
       .icon {
-        g {
-          stroke: #000;
+        g,
+        line {
+          stroke: #000 !important;
         }
       }
       #search-icon,
@@ -99,6 +100,18 @@ header {
     }
     &__menu {
       cursor: pointer;
+      svg {
+        @media screen and (max-width: 768px) {
+          &.hide {
+            display: none;
+          }
+        }
+        @media screen and (min-width: 768px) {
+          &:last-of-type {
+            display: none;
+          }
+        }
+      }
     }
     &__menu,
     &__group {

@@ -99,8 +99,9 @@ header .nav.coloured {
   padding: 1rem 2rem;
 }
 
-header .nav.coloured .icon g {
-  stroke: #000;
+header .nav.coloured .icon g,
+header .nav.coloured .icon line {
+  stroke: #000 !important;
 }
 
 header .nav.coloured #search-icon g,
@@ -123,6 +124,18 @@ header .nav.coloured .nav__group {
 
 header .nav__menu {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav__menu svg.hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .nav__menu svg:last-of-type {
+    display: none;
+  }
 }
 
 header .nav__menu, header .nav__group {
